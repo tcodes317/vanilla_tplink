@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 150px){
+    
+}
+@media screen and (min-width: 300px){
+    
+}
+@media screen and (min-width: 468px){
+    
+}
+@media screen and (min-width: "640px"){
+    
+}
+@media screen and (min-width: "768px"){
+    
+}
+@media screen and (min-width: "992px"){
+    
+}
+@media screen and (min-width: "1024px"){
+    
+}
+@media screen and (min-width: "1280px"){
+    
+}
+@media screen and (min-width: 1440px){
+    .fi{
+        background-color: #535353;
+        padding: 15px;
+    }
+    .container{
+        width: 1280px;
+        margin: 0 auto;
+    }   
+    .fi .flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fi .container .flex .i nav,
+    .fi .container .flex .ii nav{
+        display: flex;
+    }
+    .fi .container .flex .i nav > *,
+    .fi .container .flex .ii nav > *{
+        color: #c5c5c5;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+    .fi .container .flex .i nav > a:nth-of-type(1){
+        margin-left: 0 !important;
+    }
+    .se .flex{
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .se .flex .i{
+        display: flex;
+        align-items: center;
+    }
+    .se .flex .i nav{
+        margin-left: 80px;
+    }
+    .se .flex .i nav > a{
+        padding: 15px 10px;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .se .flex .ii button{
+        margin-right: 15px;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        background-color: transparent;
+    }
+    .rel{
+        position: relative;
+        height: 710px;
+    }
+    .rel .imgSlider{
+        width: 100%;
+        height: 700px;
+        display: none;
+        position: absolute;
+        opacity: 0;
+    }
+    .rel .imgSlider img{
+        width: 100%;
+        height: 700px;
+    }
+    .rel .text{
+        position: absolute;
+        top: 180px;
+        width: 550px;
+        font-size: 25px;
+        left: 14%;
+    }
+    .sliderdot{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sliderdot .dot{
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        background-color: #a8a8a8;
+        border-radius: 100%;
+    }
+    .active{
+        background-color: #00e1ff !important;
+    }
+    .rel .btn{
+        position: absolute;
+        left: 0;
+        top: 300px;
+        width: 100%;
+        padding: 0 20px;
+        /* display: none !important; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rel .btn button{
+        cursor: pointer;
+        width: 55px;
+        height: 100px;
+        border: none;
+    }
+    .rel .btn button:nth-of-type(2){
+        right: 0;
+    }
+    .ma{
+        position: relative;
+    }
+    .ma .ma-ii{
+        position: relative;
+        margin: 60px 0;
+    }
+    .ma .ma-ii .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ma .ma-ii .flex .card{
+        width: 300px;
+        font-size: 20px;
+        height: 350px;
+        position: relative;
+        margin: 0 5px;
+    }
+    .ma .ma-ii .flex .card h3{
+        margin-top: 30px;
+    }
+    .ma .ma-ii .flex .card:nth-of-type(1) div{
+        width: 40px;
+        height: 10px;
+        background-color: #b1b1b1;
+        position: absolute;
+        bottom: 0;
+    }
+    .ma .ma-ii .flex .card img{
+        height: 280px;
+        width: 280px;
+        border-radius: 15px;
+    }
+    .ma .ma-ii .flex .card:nth-of-type(2),
+    .ma .ma-ii .flex .card:nth-of-type(3),
+    .ma .ma-ii .flex .card:nth-of-type(4){
+    cursor: pointer !important;
+    }
+    .ma .ma-ii .flex .card:nth-of-type(2) div:nth-of-type(1),
+    .ma .ma-ii .flex .card:nth-of-type(3) div:nth-of-type(1),
+    .ma .ma-ii .flex .card:nth-of-type(4) div:nth-of-type(1){
+        font-size: 14px;
+        color:#535353;
+        margin: 10px 0;
+    }
+    .ma .ma-iii{
+        margin: 100px 0;
+        margin-top: 120px;
+    }
+    .ma .ma-iii .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ma .ma-iii .btn button{
+        padding: 20px;
+        margin: 0 10px;
+        border:none;
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+        color: #c7c7c7;
+        font-size: 30px;
+        background-color: transparent;
+    }
+}
