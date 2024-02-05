@@ -25,8 +25,3 @@ function showSlider(n){
     dots[sliderIndex - 1].className+=" active";
 }
 let tts=document.querySelector(".lta");let rec=document.querySelector(".ma-iii .btn .btnactive");rec.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000 !important"; tts.classList.remove("bottom");tts.style="color: #c7c7c7"});rec.classList.add("bottom");tts.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000"; rec.classList.remove("bottom");rec.style="color: #c7c7c7 !important"});
-function wp(){
-    
-}
-function tu(){
-}

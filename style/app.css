@@ -38,7 +38,7 @@
         padding: 15px;
     }
     .container{
-        width: 1280px;
+        width: 1360px;
         margin: 0 auto;
     }   
     .fi .flex{
@@ -72,24 +72,47 @@
     .se .flex .i .h-nav{
         display: flex;
         align-items: center;
+        position: relative;
+        left: 50px;
+    }
+    .se .flex .i .h-nav .hom{
+        position: relative;
+        left: 100px;
     }
     .se .flex .i .h-nav .hom a{
+        font-weight: bold;
+        font-size: 18px;
         color: #000;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: bold;
+        padding: 15px 0;
+        border-bottom: 5px solid rgb(0, 168, 168);
     }
-    .se .flex .i .h-nav
-    .se .flex .i nav{
-        margin-left: 220px;
+    .se .flex .i .h-nav .hom .dropdown{
+        position: absolute;
+        top: 40px;
+        left: -528px;
+        /* display: none; */
+        width: 1905px;
+        /* background-color: #000; */
     }
-    .se .flex .i .h-nav {}
-    .se .flex .ii button{
-        margin-right: 15px;
-        border: none;
+    .se .flex .i .h-nav .hom .dropdown .i{
+        background-color: #eeeeee;
         padding: 10px;
-        font-size: 18px;
-        background-color: transparent;
+    }
+    .se .flex .i .h-nav .hom .dropdown .i .i-flex{
+        display: flex;
+        position: relative;
+        left: 11%;
+    }
+    .se .flex .i .h-nav .hom .dropdown .i .i-flex button{
+        padding: 10px;
+        border: none;
+        width: 150px;
+        border-right: 1px solid;
+    }
+    .se .flex .i .h-nav .hom .dropdown .i .i-flex button:last-child{
+        border-right: none;
     }
     .rel{
         position: relative;
