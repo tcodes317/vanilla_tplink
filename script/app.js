@@ -24,5 +24,4 @@ function showSlider(n){
     slides[sliderIndex - 1].style="display: block";
     dots[sliderIndex - 1].className+=" active";
 }
-
-let btnacti=document.querySelector(".btnactive");btnacti.addEventListener("click", (e)=>{let p=document.createElement("div");e.target.append(p);e.target.style="color: #000;";p.style="position: absolute;left: 42%;bottom: 0;padding: 2px; width: 50px; margin: 0 auto;background-color: lightblue;transition: all linear 3s"})
+let tts=document.querySelector(".lta");let rec=document.querySelector(".ma-iii .btn .btnactive");rec.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000 !important"; tts.classList.remove("bottom");tts.style="color: #c7c7c7"});rec.classList.add("bottom");tts.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000"; rec.classList.remove("bottom");rec.style="color: #c7c7c7 !important"})

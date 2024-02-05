@@ -50,8 +50,8 @@
     .fi .container .flex .ii nav{
         display: flex;
     }
-    .fi .container .flex .i nav > *,
-    .fi .container .flex .ii nav > *{
+    .fi .container .flex .i nav > a,
+    .fi .container .flex .ii nav > a{
         color: #c5c5c5;
         text-decoration: none;
         margin: 0 20px;
@@ -70,13 +70,37 @@
         align-items: center;
     }
     .se .flex .i nav{
-        margin-left: 80px;
+        margin-left: 220px;
+    }
+    .se .flex .i nav > a:hover{
+        border-bottom: 3px solid rgb(0, 255, 255);
     }
     .se .flex .i nav > a{
-        padding: 15px 10px;
+        padding: 15px 0px;
+        margin: 0 20px;
+        border-bottom: 3px solid transparent;
         color: #000;
         text-decoration: none;
         font-weight: bold;
+    }
+    .se .flex .i nav > .dropdown{
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        left: 0;
+        top: 105px;
+        background-color: gold;
+    }
+    .se .flex .i nav > .dropdown .t .t-flex{
+        display: flex;
+        padding: 10px;
+    }
+    .se .flex .i nav > .dropdown .t .t-flex button{
+        padding: 5px;
+        width: 100%;
+        font-weight: bold;
+        border: none;
+        background-color: transparent;
     }
     .se .flex .ii button{
         margin-right: 15px;
@@ -191,6 +215,7 @@
     .ma .ma-iii{
         margin: 100px 0;
         margin-top: 120px;
+        margin-bottom: 530px;
     }
     .ma .ma-iii .btn{
         display: flex;
@@ -199,13 +224,322 @@
     }
     .ma .ma-iii .btn button{
         padding: 20px;
-        margin: 0 10px;
+        margin: 0 15px;
+        color: #c7c7c7;
         border:none;
         cursor: pointer;
         font-weight: bold;
         position: relative;
-        color: #c7c7c7;
         font-size: 30px;
         background-color: transparent;
+    }
+    .bottom::after{
+        position: absolute;
+        width: 35px;
+        content: "";
+        padding: 2px;
+        background-color: rgb(0, 255, 255);
+        bottom: 10px;
+        left: 42%;
+        transition: all linear 5s;
+    }
+    .ma .ma-iii .btn button:nth-of-type(1){
+        color: #000 !important;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .btn{
+        position: absolute;
+        top: 220px;
+        left: 8%;
+        width: 85%;
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .btn button{
+        font-size: 50px;
+    }
+    .ma .ma-iii .ot .rec .rec-rel{
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 2px solid;
+        width: 100%;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .flex .card{
+        border-radius: 20px;
+        text-align: center;
+        padding-bottom: 100px !important;
+        padding: 0 20px;
+        box-shadow: 0px 0px 2px 0px #000;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .flex .card img{
+        width: 100%;
+        height: 250px;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .flex .card .card-text{
+        margin-top: 35px;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .flex .card .card-text h2{
+        margin-bottom: 15px;
+    }
+    .ma .ma-iii .ot .rec .rec-rel .flex .card .card-text .text{
+        font-size: 20px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .ma .ma-iii .ot .ot-rel{
+        position: relative;
+        top: 50px;
+    }
+    .ma .ma-iii .ot .ot-rel .rec,
+    .ma .ma-iii .ot .ot-rel .lat{
+        position: absolute;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .btnn{
+        position: absolute;
+        top: 200px;
+        width: 100%;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .btnn button:nth-of-type(1){
+        left: 0;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .btnn button{
+        font-size: 48px;
+        border: none;
+        background-color: transparent;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .btnn button:nth-of-type(1){
+        left: -50px;
+        display: none;
+        position: absolute;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .btnn button:nth-of-type(2){
+        right: -50px;
+        position: absolute;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .btn button:nth-of-type(2){
+        right: 0px;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        position: absolute;
+        justify-self: center;
+        /* border: 2px solid; */
+        background-color: #fff;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont-i{
+        display: none;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont-ii{
+        /* display: none !important; */
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont .card:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        transition: all linear .3s;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont .card{
+        text-align: center;
+        padding: 20px;
+        margin: 0 15px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 3px 0px #808080;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont .card .dbtn{
+        display: none;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont .card .dbtn button{
+        background-color:rgb(0, 255, 255);
+        position: relative;
+        top: 10px;
+        padding: 10px 35px;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont .card img{
+        width: 100%;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont .card .rec-cont-card-cont{
+        margin-top: 15px;
+    }
+    .ma .ma-iii .ot .ot-rel .rec .rec-cont .card .rec-cont-card-cont h2{
+        margin-bottom: 15px;
+    }
+    .ma .ma-iv{
+        margin: 50px auto;
+        position: relative;
+    }
+    .ma .ma-iv .ma-iv-flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ma .ma-iv img{
+        width: 100%;
+        height: 180px;
+        border-radius: 20px;
+        border: 2px solid;
+    }
+    .ma .ma-iv .ma-iv-flex{
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+    .ma .ma-iv .ma-iv-flex button{
+        margin-top: 10px;
+        background-color: rgb(255, 195, 83);
+        padding: 10px 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+    .ma .ma-iv .ma-iv-flex button i{
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .ma .ma-iv .ma-iv-flex button:hover{
+        opacity: .7
+    }
+    .ma .ma-v{
+        margin-top: 120px !important;
+    }
+    .ma .ma-v .ma-v-cont{
+        position: relative;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+    .ma .ma-v .ma-v-cont .ma-v-flex .ii nav > *{
+        font-size: 18px;
+        margin: 0 15px;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-flex .ii nav > * > i{
+        font-size: 12px;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c{
+        position: relative;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin-top: 50px;
+        justify-items: center;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card{
+        width: 410px;
+        background-color: #ebebeb;
+        overflow: hidden;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card img{
+        width: 100%;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card img:hover{
+        transform: scale(1.1);
+        transition: all linear .3s;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .div{
+        padding: 15px;
+        height: 250px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .div p{
+        font-size: 18px;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .i{
+        padding: 25px;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .i{
+        border-bottom: 2px solid #dddddd;
+        /* padding-bottom: 25px; */
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .i:hover{
+        color:rgb(0, 255, 255);
+        cursor: pointer;
+        transition: all linear .1s;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .iu div:nth-of-type(1){
+        padding-top: 25px;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .i div{
+        font-size: 20px;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .i div:nth-of-type(1){
+        margin-bottom: 25px;
+    }
+    .ma .ma-v .ma-v-cont .ma-v-c .grid .card .ui{
+        border-bottom: none;
+    }
+    .ma .ma-vi{
+        padding: 100px 0;
+    }
+    .ma .ma-vi .ma-vi-flex{
+        display: flex;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-i .input{
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px 0px #a8a8a8;
+        margin-top: 30px;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-i .input input::placeholder{
+        font-size: 16px;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-i .input input{
+        border-right: 1px solid !important;
+        width: 400px;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-i .input input,
+    .ma .ma-vi .ma-vi-flex .cont-i .input button{
+        padding: 5px;
+        border: none;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-i .input button{
+        padding: 8px 15px;
+        font-weight: bold;
+        background-color: transparent;
+        color:rgb(0, 168, 168)
+    }
+    .ma .ma-vi .ma-vi-flex .cont-ii{
+        margin-left: 150px;
+    }
+    .ma .ma-vi .ma-vi-flex div:nth-of-type(1) h1{
+        display: flex;
+        align-items: center;
+    }
+    .tp-follow-icon{
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin-left: 10px;
+        background: url(https://static.tp-link.com/assets/images/icon/tips.svg) 50% 50% no-repeat;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-ii .f{
+        display: flex;
+        align-items: center;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-ii .f i{
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px;
+        margin-top: 25px;
+    }
+    .ma .ma-vi .ma-vi-flex .cont-ii .f i:nth-of-type(1){
+        margin-left: 0px;
     }
 }
