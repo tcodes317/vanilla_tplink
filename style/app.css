@@ -548,6 +548,21 @@
     }
     .footer .footer-flex{
         display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    .footer .wi{
+        color: #b1b1b1;
+        margin-bottom: 0px !important;
+    }
+    .footer .footer-flex .i{
+        display: flex;
+    }
+    .footer .footer-flex .ii img{
+        width: 100px;
+        height: 30px;
+        margin: 0 10px;
+        border: 2px solid;
     }
     .footer .footer-flex nav{
         margin-right: 50px;
