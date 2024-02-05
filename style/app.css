@@ -69,39 +69,21 @@
         display: flex;
         align-items: center;
     }
+    .se .flex .i .h-nav{
+        display: flex;
+        align-items: center;
+    }
+    .se .flex .i .h-nav .hom a{
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .se .flex .i .h-nav
     .se .flex .i nav{
         margin-left: 220px;
     }
-    .se .flex .i nav > a:hover{
-        border-bottom: 3px solid rgb(0, 255, 255);
-    }
-    .se .flex .i nav > a{
-        padding: 15px 0px;
-        margin: 0 20px;
-        border-bottom: 3px solid transparent;
-        color: #000;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .se .flex .i nav > .dropdown{
-        position: absolute;
-        width: 100%;
-        color: #fff;
-        left: 0;
-        top: 105px;
-        background-color: gold;
-    }
-    .se .flex .i nav > .dropdown .t .t-flex{
-        display: flex;
-        padding: 10px;
-    }
-    .se .flex .i nav > .dropdown .t .t-flex button{
-        padding: 5px;
-        width: 100%;
-        font-weight: bold;
-        border: none;
-        background-color: transparent;
-    }
+    .se .flex .i .h-nav {}
     .se .flex .ii button{
         margin-right: 15px;
         border: none;
