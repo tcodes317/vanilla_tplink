@@ -464,7 +464,6 @@
     }
     .ma .ma-v .ma-v-cont .ma-v-c .grid .card .i{
         border-bottom: 2px solid #dddddd;
-        /* padding-bottom: 25px; */
     }
     .ma .ma-v .ma-v-cont .ma-v-c .grid .card .i:hover{
         color:rgb(0, 255, 255);
@@ -501,6 +500,7 @@
     .ma .ma-vi .ma-vi-flex .cont-i .input input{
         border-right: 1px solid !important;
         width: 400px;
+        outline: none;
     }
     .ma .ma-vi .ma-vi-flex .cont-i .input input,
     .ma .ma-vi .ma-vi-flex .cont-i .input button{
@@ -559,10 +559,9 @@
         display: flex;
     }
     .footer .footer-flex .ii img{
-        width: 100px;
-        height: 30px;
+        width: 120px;
+        /* height: 30px; */
         margin: 0 10px;
-        border: 2px solid;
     }
     .footer .footer-flex nav{
         margin-right: 50px;
