@@ -542,4 +542,24 @@
     .ma .ma-vi .ma-vi-flex .cont-ii .f i:nth-of-type(1){
         margin-left: 0px;
     }
+    .footer{
+        background-color: #535353;
+        padding: 50px 0;
+    }
+    .footer .footer-flex{
+        display: flex;
+    }
+    .footer .footer-flex nav{
+        margin-right: 50px;
+    }
+    .footer .footer-flex nav h3{
+        color: #fff
+    }
+    .footer .footer-flex nav > *{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        color: #a5a5a5;
+        text-decoration: none;
+    }
 }
