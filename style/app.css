@@ -68,6 +68,63 @@
         align-items: center;
         justify-content: space-between;
     }
+    .se .flex .ii .ip{
+        position: absolute;
+        left: 25%;
+        display: none;
+        background-color: #fff;
+        padding: 10px;
+        top: 50px;
+    }
+    .se .flex .ii .ip i{
+        font-size: 25px;
+    }
+    .se .flex .ii .ip input:focus{
+        outline: none;
+    }
+    .se .flex .ii .ip .ip-rel .ip-rel-cont{
+        position: absolute;
+        width: 1915px;
+        height: 925px;
+        left: -476px !important;
+        padding: 10px;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .se .flex .ii .ip .ip-rel .ip-rel-cont .ip-rel-cont-i{
+        width: 1093px;
+        background-color: #fff;
+        position: relative;
+        left: 27%;
+        top: -10px;
+        padding-bottom: 10px;
+    }
+    .se .flex .ii .ip .ip-rel .ip-rel-cont .ip-rel-cont-i button{
+        padding: 15px 15px;
+        font-size: 18px;
+        color: #a8a8a8
+    }
+    .se .flex .ii .ip .ip-rel .ip-rel-cont .ip-rel-cont-i nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .se .flex .ii .ip .ip-rel .ip-rel-cont .ip-rel-cont-i nav a{
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+    .se .flex .ii .ip .ip-rel .ip-rel-cont nav a:hover{
+        background-color: #a5a5a5;
+    }
+    .se .flex .ii .ip input{
+        padding: 10px;
+        width: 1100px;
+        border: none;
+    }
+    .se .flex .ii .ip input::placeholder{
+        font-size: 18px;
+    }
     .se .flex .ii button{
         font-size: 20px;
         background-color: transparent;
