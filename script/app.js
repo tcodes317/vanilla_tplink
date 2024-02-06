@@ -24,4 +24,21 @@ function showSlider(n){
     slides[sliderIndex - 1].style="display: block";
     dots[sliderIndex - 1].className+=" active";
 }
-let tts=document.querySelector(".lta");let rec=document.querySelector(".ma-iii .btn .btnactive");rec.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000 !important"; tts.classList.remove("bottom");tts.style="color: #c7c7c7"});rec.classList.add("bottom");tts.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000"; rec.classList.remove("bottom");rec.style="color: #c7c7c7 !important"});let hjk=document.querySelector(".hom-i");hjk.addEventListener("mouseover", ()=>{document.querySelector(".se .flex .i .h-nav .hom a").style="border-bottom: 5px solid rgb(0, 168, 168)";let iiu=document.getElementById("dropdown");iiu.style="display: block !important;"});hjk.addEventListener("mouseout", (e)=>{let iiu=document.getElementById("dropdown");iiu.style="display: none";document.querySelector(".se .flex .i .h-nav .hom a").style="border-bottom: 5px solid transparent"});function ty(){document.getElementById("pyi").style="display: none";document.body.style="overflow: visible";}function uu(){document.getElementById("pyi").style="display: block !important";document.body.style="overflow: hidden";};let xxh=document.querySelector(".hom-ii");xxh.addEventListener("mouseover", (e)=>{document.querySelector(".dropdown").style="display: block !important"});xxh.addEventListener("mouseout", (e)=>{document.querySelector(".dropdown").style="display: none"})
+let tts=document.querySelector(".lta");let rec=document.querySelector(".ma-iii .btn .btnactive");rec.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000 !important"; tts.classList.remove("bottom");tts.style="color: #c7c7c7"});rec.classList.add("bottom");tts.addEventListener("click", (e)=>{e.target.classList.add("bottom");e.target.style="color: #000"; rec.classList.remove("bottom");rec.style="color: #c7c7c7 !important"});
+
+//dropdown one
+
+// let hjk=document.querySelector(".hom-i");
+// hjk.addEventListener("mouseover", (e)=>{document.querySelector(".se .flex .i .h-nav .hom-i a").style="border-bottom: 5px solid rgb(0, 168, 168)";let iiu=document.querySelector(".dropdown-i");iiu.style="display: block !important;"});
+// hjk.addEventListener("mouseout", (e)=>{let iiu=document.querySelector(".dropdown-i");iiu.style="display: none";document.querySelector(".se .flex .i .h-nav .hom-i a").style="border-bottom: 5px solid transparent"});
+
+
+
+function ty(){document.getElementById("pyi").style="display: none";document.body.style="overflow: visible";}
+function uu(){document.getElementById("pyi").style="display: block !important";document.body.style="overflow: hidden";};
+
+
+// dropdown two
+let xxh=document.querySelector(".hom-ii");
+xxh.addEventListener("mouseover", (e)=>{document.querySelector(".se .flex .i .h-nav .hom-ii a").style="border-bottom: 5px solid rgb(0, 168, 168)";let weq=document.querySelector(".dropdown-ii");weq.style="display: block !important;"});
+xxh.addEventListener("mouseout", (e)=>{let weq=document.querySelector(".dropdown-ii");weq.style="display: none";document.querySelector(".se .flex .i .h-nav .hom-ii a").style="border-bottom: 5px solid transparent"});
