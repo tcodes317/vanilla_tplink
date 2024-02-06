@@ -146,6 +146,7 @@
     }
     .se .flex .ii .ii-cont .ii-grid .f{
         display: flex;
+        padding: 0 20px;
         border-right: 1px solid;
         align-items: center;
     }
@@ -154,6 +155,7 @@
     }
     .se .flex .ii .ii-cont .ii-grid .f img{
         width: 120px;
+        margin-right: 20px;
     }
     .se .flex .ii .ii-cont .ii-grid .f .f-cont > *{
         margin: 15px 0;

@@ -28,9 +28,9 @@ let tts=document.querySelector(".lta");let rec=document.querySelector(".ma-iii .
 
 //dropdown one
 
-// let hjk=document.querySelector(".hom-i");
-// hjk.addEventListener("mouseover", (e)=>{document.querySelector(".se .flex .i .h-nav .hom-i a").style="border-bottom: 5px solid rgb(0, 168, 168)";let iiu=document.querySelector(".dropdown-i");iiu.style="display: block !important;"});
-// hjk.addEventListener("mouseout", (e)=>{let iiu=document.querySelector(".dropdown-i");iiu.style="display: none";document.querySelector(".se .flex .i .h-nav .hom-i a").style="border-bottom: 5px solid transparent"});
+let hjk=document.querySelector(".hom-i");
+hjk.addEventListener("mouseover", (e)=>{document.querySelector(".se .flex .i .h-nav .hom-i a").style="border-bottom: 5px solid rgb(0, 168, 168)";let iiu=document.querySelector(".dropdown-i");iiu.style="display: block !important;"});
+hjk.addEventListener("mouseout", (e)=>{let iiu=document.querySelector(".dropdown-i");iiu.style="display: none";document.querySelector(".se .flex .i .h-nav .hom-i a").style="border-bottom: 5px solid transparent"});
 
 
 
